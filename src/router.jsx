@@ -6,6 +6,8 @@ import Auth from "./components/RouteHandle/Auth";
 import JobList from "./components/JobList/Index";
 import AthleteAuthPages from "./components/RouteHandle/AthleteAuthPages";
 import AppliedJob from "./components/AppliedJob/Index";
+import PartnerAuthPages from "./components/RouteHandle/PartnerAuthPages";
+import MyPostedJob from "./components/MyPostedJob/Index";
 
 const routers = createBrowserRouter([
     {
@@ -38,7 +40,16 @@ const routers = createBrowserRouter([
                 children: [
                     {
                         path: "/my-jobs",
-                        element: <AppliedJob></AppliedJob>,
+                        element: <AppliedJob />,
+                    },
+                ],
+            },
+            {
+                element: <PartnerAuthPages />,
+                children: [
+                    {
+                        path: "/posted-job",
+                        element: <MyPostedJob />,
                     },
                 ],
             },

@@ -6,8 +6,8 @@ const RegisterTabs = ({ onSelect }) => {
         <div>
             <Nav variant="tabs" defaultActiveKey="1" onSelect={onSelect}>
                 {users.map((user) => (
-                    <Nav.Item key={user.roleId}>
-                        <Nav.Link eventKey={user.roleId}>{user.name}</Nav.Link>
+                    <Nav.Item key={user.id}>
+                        <Nav.Link eventKey={user.id}>{user.name}</Nav.Link>
                     </Nav.Item>
                 ))}
             </Nav>
