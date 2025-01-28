@@ -1,7 +1,6 @@
-import React from "react";
 
 const JobList = () => {
-  return <div>JobList</div>;
+  return <div className="container">JobList</div>;
 };
 
 export default JobList;

@@ -23,7 +23,6 @@ const Register = () => {
             JSON.parse(
                 localStorage[selectedTab == "1" ? "partner" : "athlete"] || null
             ) || [];
-
         const allUser = [...oldUser, ...oldUserForAnother];
 
         const isDuplicate =
@@ -31,7 +30,7 @@ const Register = () => {
         if (isDuplicate) {
             toast.error("Already user is registered!");
         } else {
-            formData.roleId = selectedTab;
+            formData.id = selectedTab;
             oldUser.push(formData);
             localStorage.setItem(userType, JSON.stringify(oldUser));
             toast.success("Register success");

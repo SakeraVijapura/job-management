@@ -1,16 +1,18 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { loginSchema } from "../../config/registerSchema";
-import { Button, Form, InputGroup, Row } from "react-bootstrap";
+import { Button, Form, InputGroup } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { IoMdEyeOff } from "react-icons/io";
 import { IoEye } from "react-icons/io5";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 const schema = loginSchema;
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState("password");
+  const navigate = useNavigate();
 
   const {
     register,
@@ -32,6 +34,9 @@ const Login = () => {
     if (isHaveUser) {
       toast.success("Login Success");
       localStorage.setItem("loggedUser", JSON.stringify(isHaveUser));
+
+      isHaveUser.id == "2" ? navigate('/posted-job') : navigate('/my-jobs');
+
     } else toast.error("Invalid credentials");
   };
 

@@ -20,10 +20,6 @@ const RegisterPartner = ({ onSubmit }) => {
         resolver: zodResolver(schema),
     });
 
-    const formSubmit = (formData) => {
-        console.log(formData);
-    };
-
     return (
         <Form validated={isValid} onSubmit={handleSubmit(onSubmit)}>
             <Row className="mb-3 ">

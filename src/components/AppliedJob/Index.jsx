@@ -1,7 +1,6 @@
-import React from "react";
 
 const AppliedJob = () => {
-  return <div>AppliedJob</div>;
+  return <div className="container">AppliedJob</div>;
 };
 
 export default AppliedJob;
