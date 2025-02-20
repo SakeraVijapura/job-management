@@ -46,7 +46,7 @@ const Login = () => {
       className="container p-5"
       onSubmit={handleSubmit(onSubmit)}
     >
-      {/* Email Control */}..
+      {/* Email Control */}
       <Form.Group className="mt-3">
         <Form.Label>Email</Form.Label>
         <Form.Control

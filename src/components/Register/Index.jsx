@@ -38,7 +38,7 @@ const Register = () => {
     };
 
     return (
-        <div className="container mt-5">
+        <div className="container mt-md-4 mt-xs-2">
             {/* Register User Tabs */}
             <Card>
                 <Card.Header>
@@ -47,7 +47,7 @@ const Register = () => {
 
                 <Card.Body>
                     {/* Form */}
-                    <div className="mt-5 px-5 bordered">
+                    <div className="mt-md-4 mt-xs-2 px-md-5 px-xs-2 bordered">
                         {selectedTab == "1" ? (
                             <RegisterAthlete onSubmit={handleRegisterUser}></RegisterAthlete>
                         ) : (

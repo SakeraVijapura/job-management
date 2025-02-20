@@ -11,8 +11,6 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
-    "@mat-datetimepicker/moment": "^15.0.1",
-    "@mui/x-date-pickers": "^7.26.0",
     "bootstrap": "^5.3.3",
     "dayjs": "^1.11.13",
     "react": "^19.0.0",

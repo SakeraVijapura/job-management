@@ -21,7 +21,7 @@ export const athleteRegisterSchema = z
         message: "Confirm password must be at least 8 characters long",
       }),
   })
-  .refine((data) => data.password == data.confirmPassword, {
+  .refine((data) => data.password == data.confirmPassword, {  
     message: "Passwords do not match",
     path: ["confirmPassword"],
   });

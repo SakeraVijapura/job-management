@@ -1,6 +1,8 @@
 
-const AppliedJob = () => {
-  return <div className="container">AppliedJob</div>;
-};
+const AppliedJobList = () => {
+    return (
+        <div>AppliedJobList</div>
+    )
+}
 
-export default AppliedJob;
+export default AppliedJobList
