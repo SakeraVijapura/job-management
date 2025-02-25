@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h4,
+p {
+    margin: 0;
+}
+
+.profile {
+    width: 35px;
+    height: 35px;
+    background-color: plum;
+    border-radius: 100%;
+    color: white;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h4.name {
+    text-transform: capitalize;
+}
+
+
+.appliedBtn {
+    margin: 0 20px 14px 20px;
+    background-color: green;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding: 6px 14px;
+    width: fit-content;
+}
